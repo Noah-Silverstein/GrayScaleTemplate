@@ -11197,3 +11197,38 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.barmitzvah-section,
+.cantillation-section,
+.biblicalhebrew-section {
+  padding: 5rem 0;
+}
+.barmitzvah-section .project-text,
+.cantillation-section .project-text,
+.biblicalhebrew-section .project-text {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5rem;
+}
+.barmitzvah-section img,
+.cantillation-section img,
+.biblicalhebrew-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.barmitzvah-section h4, .barmitzvah-section .h4,
+.cantillation-section h4,
+.cantillation-section .h4,
+.biblicalhebrew-section h4,
+.biblicalhebrew-section .h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.barmitzvah-section p,
+.cantillation-section p,
+.biblicalhebrew-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
