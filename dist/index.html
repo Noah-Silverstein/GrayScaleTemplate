@@ -26,9 +26,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-translate="menu.about"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" data-translate="menu.courses"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup" data-translate="menu.contact"></a></li>
+                        <li class="nav-item"></li>
+                        <select id="language-switcher">
+                            <option value="en">EN</option>
+                            <option value="nl">NL</option>
+                        </select>
                     </ul>
                 </div>
             </div>
@@ -38,8 +43,8 @@
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Anneke's Place</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Jewish stuff Lorem Ipsum etc .</h2>
+                        <h1 class="mx-auto my-0 text-uppercase" data-translate="masthead.title"></h1>
+                        <p class="mb-0 text-black-50" data-translate="masthead.description"></p>
                         <!--a.btn.btn-primary(href='#about') button -->
                     </div>
                 </div>
@@ -50,63 +55,40 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Who am I?</h2>
-                        <p class="text-white-50">jewish jewish hannukah stuff Lorem ipsum lorem ipsum whatever bla blabl blabalblablablabalabla The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                        <h2 data-translate="aboutme.title"></h2>
+                        <p class="text-justify" data-translate="aboutme.description"></p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
             </div>
         </section>
         <!-- Courses Overview-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Courses on offer</h4>
-                            <p class="text-black-50 mb-0">short text about courses and stuff?</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center"><h4>Courses on offer</h4></div>
                 <!-- Course One Row-->
+                <!-- Course One Row with Collapse-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">bar mitzvah</h4>
-                                    <p class="mb-0 text-white-50">short text about what barmitvah link to page somewhere i guess tbd.</p>
+                        <div class="card">
+                            <!-- Card Header-->
+                            <div class="card-header"><h4 class="text-dark mb-0">Bar Mitzvah</h4></div>
+                            <!-- Card Body-->
+                            <div class="card-body">
+                                <div class="content-wrapper d-flex">
+                                    <div class="image-wrapper"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                                    <div class="text-content">
+                                        <p class="mb-0 text-dark-50">Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources.</p>
+                                        <!-- Button to toggle collapse-->
+                                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBarMitzvah" aria-expanded="false" aria-controls="collapseBarMitzvah">Learn More</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Course Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">cantillation</h4>
-                                    <p class="mb-0 text-white-50">short text about what cantillation link to page somewhere i guess tbd.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Course One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">biblical hebrew for beginners</h4>
-                                    <p class="mb-0 text-white-50">short text about what biblical hebrew is link to page somewhere i guess tbd.</p>
+                            <!-- Collapsible Content-->
+                            <div class="collapse" id="collapseBarMitzvah">
+                                <div class="card-body">
+                                    <p class="mb-0 text">Additional information about Bar Mitzvah. This section can contain links or further details.</p>
+                                    <a class="btn btn-secondary mt-3" href="#barmitzvah">Close</a>
                                 </div>
                             </div>
                         </div>
@@ -114,61 +96,77 @@
                 </div>
             </div>
         </section>
-        <!-- Section for Bar Mitzvah-->
-        <section class="barmitzvah-section" id="barmitzvah">
+        <!-- Testimonials Section-->
+        <section class="testimonials-section bg-light" id="testimonials">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Bar Mitzvah</h4>
-                                    <p class="mb-0 text-white-50">Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources.</p>
+                <h4 class="text-center mb-4">Testimonials</h4>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="carousel slide" id="testimonialCarousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row testimonial-row">
+                                        <!-- All testimonials will be dynamically adjusted-->
+                                        <div class="col-md-4">
+                                            <div class="card testimonial-card">
+                                                <div class="card-body">
+                                                    <p>"This is the first testimonial. It's amazing!"</p>
+                                                    <h5 class="text-primary">John Doe</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card testimonial-card">
+                                                <div class="card-body">
+                                                    <p>"This is the second testimonial. It's fantastic!"</p>
+                                                    <h5 class="text-primary">Jane Smith</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card testimonial-card">
+                                                <div class="card-body">
+                                                    <p>"This is the third testimonial. It's wonderful!"</p>
+                                                    <h5 class="text-primary">Alice Johnson</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card testimonial-card">
+                                                <div class="card-body">
+                                                    <p>"This is the fourth testimonial. It's inspiring!"</p>
+                                                    <h5 class="text-primary">Bob Brown</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card testimonial-card">
+                                                <div class="card-body">
+                                                    <p>"This is the fifth testimonial. It's incredible!"</p>
+                                                    <h5 class="text-primary">Sarah White</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card testimonial-card">
+                                                <div class="card-body">
+                                                    <p>"This is the sixth testimonial. It's life-changing!"</p>
+                                                    <h5 class="text-primary">Michael Green</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Section for Cantillation-->
-        <section class="cantillation-section" id="cantillation">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-4"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-8">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Cantillation</h4>
-                                    <p class="mb-0 text-white-50">Detailed text about what Cantillation is. This section can contain more information and links to other resources.</p>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <p class="mb-0 text-white-50">hello</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Section for Biblical Hebrew-->
-        <section class="biblicalhebrew-section" id="biblicalhebrew">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-4"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-8">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Biblical Hebrew</h4>
-                                    <p class="mb-0 text-white-50">Detailed text about what bibhebrew is. This section can contain more information and links to other resources.</p>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <p class="mb-0 text-white-50"></p>
-                                    <p class="mb-0 text-white-50">hello</p>
-                                </div>
-                            </div>
+                            <!-- Carousel Controls-->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>

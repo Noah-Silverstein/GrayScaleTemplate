@@ -4,7 +4,7 @@
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: $white;
+    background-color: $secondary;
 
     .navbar-toggler {
         font-size: 80%;
@@ -26,7 +26,7 @@
     .navbar-nav {
         .nav-item {
             &:hover {
-                color: fade($white, 80%);
+                color: fade($accent, 80%);
                 outline: none;
                 background-color: transparent;
             }
@@ -46,18 +46,19 @@
         background-color: transparent;
         transition: background-color 0.3s ease-in-out;
 
+        //logo left hand screen 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: fade-out($white, 0.5);
+            color: fade-out($black, 0.5);   
         }
-
+        //nav links right hand screen (about me, courses, ... etc)
         .nav-link {
             transition: none;
             padding: 2rem 1.5rem;
-            color: fade-out($white, 0.5);
+            color: fade-out($black, 0.5);
 
             &:hover {
-                color: fade-out($white, 0.25);
+                color: fade-out($accent, 0.25);
             }
 
             &:active {

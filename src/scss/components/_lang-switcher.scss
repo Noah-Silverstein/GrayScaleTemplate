@@ -1,0 +1,79 @@
+#language-switcher {
+    display: inline-block;
+    font-weight: 400;
+    color: $primary; 
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid $primary; // Border color similar to primary button
+    padding: 0.375rem 0.75rem; // Padding similar to button
+    font-size: 1rem; // Font size
+    line-height: 1.5;
+    border-radius: 0.25rem; // Rounded corners
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; // Transition for hover and focus
+
+    &:hover {
+        color: fade($white, 80%);
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &:focus {
+        color: $secondary; // Text color on focus
+        background-color: transparent; // Background color on focus
+        outline: 0; // Remove outline
+        box-shadow: 0 0 0 0.2rem rgba(43, 44, 44, 0.5); // Box shadow on focus
+    }
+
+    &:active {
+        color: $primary; // Text color on active
+        background-color: $secondary; // Background color on active
+    }
+
+
+    // Remove default arrow and add custom arrow
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 8px 10px;
+    
+    @include media-breakpoint-up(lg) {
+        #language-switcher {
+            color: inherit; // Inherit text color from parent (navbar)
+            background-color: transparent; // Transparent background color for large screens
+            border-color: transparent; // Transparent border color for large screens
+    
+            &:hover {
+                color: $primary; // Text color on hover for large screens
+                background-color: transparent; // Transparent background color on hover for large screens
+                border-color: $primary; // Border color on hover for large screens
+                cursor: pointer; // Ensure cursor changes to pointer on hover for large screens
+            }
+    
+            &:focus {
+                color: $primary; // Text color on focus for large screens
+                background-color: transparent; // Transparent background color on focus for large screens
+                border-color: $primary; // Border color on focus for large screens
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); // Box shadow on focus for large screens
+            }
+    
+            &:active {
+                color: $primary; // Text color on active for large screens
+                background-color: transparent; // Transparent background color on active for large screens
+                border-color: $primary; // Border color on active for large screens
+            }
+        }
+    }
+}
+
+// Ensure the select dropdown fits well within the navbar
+.navbar-nav {
+    display: flex;
+    align-items: center;
+
+    #language-switcher {
+        margin-left: 1rem; // Space between the select and other nav items
+    }
+}

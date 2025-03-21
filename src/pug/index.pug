@@ -34,19 +34,22 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#about') About Me
+                            a.nav-link(href='#about', data-translate='menu.about') 
                         li.nav-item
-                            a.nav-link(href='#projects') Courses
+                            a.nav-link(href='#projects', data-translate='menu.courses') 
                         li.nav-item
-                            a.nav-link(href='#signup') Contact
-
+                            a.nav-link(href='#signup', data-translate='menu.contact') 
+                        li.nav-item
+                        select#language-switcher
+                            option(value='en') EN
+                            option(value='nl') NL
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
                 .d-flex.justify-content-center
                     .text-center
-                        h1.mx-auto.my-0.text-uppercase Anneke's Place
-                        h2.text-white-50.mx-auto.mt-2.mb-5 Jewish stuff Lorem Ipsum etc .
+                        h1.mx-auto.my-0.text-uppercase(data-translate='masthead.title') 
+                        p.mb-0.text-black-50(data-translate='masthead.description') 
                         //a.btn.btn-primary(href='#about') button 
 
         // About
@@ -54,113 +57,89 @@ html(lang='en')
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4 Who am I?
-                        p.text-white-50
-                            | jewish jewish hannukah stuff Lorem ipsum lorem ipsum whatever bla blabl blabalblablablabalabla
-                            | The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='...')
+                        h2(data-translate= 'aboutme.title') 
+                        p.text-justify(data-translate= 'aboutme.description')
 
         // Courses Overview
         section#projects.projects-section.bg-light
             .container.px-4.px-lg-5
                 // Featured Project Row
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Courses on offer
-                            p.text-black-50.mb-0
-                                | short text about courses and stuff?
+                    h4 Courses on offer
                 // Course One Row
+
+                // Course One Row with Collapse
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white bar mitzvah
-                                    p.mb-0.text-white-50
-                                        | short text about what barmitvah link to page somewhere i guess tbd.
-                // Course Two Row
-                .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white cantillation
-                                    p.mb-0.text-white-50
-                                        | short text about what cantillation link to page somewhere i guess tbd.
-                // Course One Row
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white biblical hebrew for beginners
-                                    p.mb-0.text-white-50
-                                        | short text about what biblical hebrew is link to page somewhere i guess tbd.
-                
-        // Section for Bar Mitzvah
-        section#barmitzvah.barmitzvah-section
+                        .card
+                            // Card Header
+                            .card-header
+                                h4.text-dark.mb-0 Bar Mitzvah
+                            // Card Body
+                            .card-body
+                                .content-wrapper.d-flex
+                                    .image-wrapper
+                                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
+                                    .text-content
+                                        p.mb-0.text-dark-50
+                                            | Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources.
+                                        // Button to toggle collapse
+                                        button.btn.btn-primary.mt-3(type='button', data-bs-toggle='collapse', data-bs-target='#collapseBarMitzvah', aria-expanded='false', aria-controls='collapseBarMitzvah') Learn More
+                            // Collapsible Content
+                            #collapseBarMitzvah.collapse
+                                .card-body
+                                    p.mb-0.text
+                                        | Additional information about Bar Mitzvah. This section can contain links or further details.
+                                    a.btn.btn-secondary.mt-3(href='#barmitzvah') Close
+
+        // Testimonials Section
+        section#testimonials.testimonials-section.bg-light
             .container.px-4.px-lg-5
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Bar Mitzvah
-                                    p.mb-0.text-white-50
-                                        | Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources.
-
-        // Section for Cantillation
-        section#cantillation.cantillation-section
-            .container.px-4.px-lg-5
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-4
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
-                    .col-lg-8
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Cantillation
-                                    p.mb-0.text-white-50
-                                        | Detailed text about what Cantillation is. This section can contain more information and links to other resources.
-                                    p.mb-0.text-white-50
-                                        |
-                                    p.mb-0.text-white-50
-                                        |
-                                    p.mb-0.text-white-50
-                                        |hello 
-
-
-        // Section for Biblical Hebrew
-        section#biblicalhebrew.biblicalhebrew-section
-            .container.px-4.px-lg-5
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-4
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
-                    .col-lg-8
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Biblical Hebrew
-                                    p.mb-0.text-white-50
-                                        | Detailed text about what bibhebrew is. This section can contain more information and links to other resources.
-                                    p.mb-0.text-white-50
-                                        |
-                                    p.mb-0.text-white-50
-                                        |
-                                    p.mb-0.text-white-50
-                                        |hello 
-
+                h4.text-center.mb-4 Testimonials
+                .row.justify-content-center
+                    .col-lg-10
+                        .carousel.slide#testimonialCarousel(data-bs-ride='carousel')
+                            .carousel-inner
+                                .carousel-item.active
+                                    .row.testimonial-row
+                                        // All testimonials will be dynamically adjusted
+                                        .col-md-4
+                                            .card.testimonial-card
+                                                .card-body
+                                                    p "This is the first testimonial. It's amazing!"
+                                                    h5.text-primary John Doe
+                                        .col-md-4
+                                            .card.testimonial-card
+                                                .card-body
+                                                    p "This is the second testimonial. It's fantastic!"
+                                                    h5.text-primary Jane Smith
+                                        .col-md-4
+                                            .card.testimonial-card
+                                                .card-body
+                                                    p "This is the third testimonial. It's wonderful!"
+                                                    h5.text-primary Alice Johnson
+                                        .col-md-4
+                                            .card.testimonial-card
+                                                .card-body
+                                                    p "This is the fourth testimonial. It's inspiring!"
+                                                    h5.text-primary Bob Brown
+                                        .col-md-4
+                                            .card.testimonial-card
+                                                .card-body
+                                                    p "This is the fifth testimonial. It's incredible!"
+                                                    h5.text-primary Sarah White
+                                        .col-md-4
+                                            .card.testimonial-card
+                                                .card-body
+                                                    p "This is the sixth testimonial. It's life-changing!"
+                                                    h5.text-primary Michael Green
+                            // Carousel Controls
+                            button.carousel-control-prev(type='button', data-bs-target='#testimonialCarousel', data-bs-slide='prev')
+                                span.carousel-control-prev-icon(aria-hidden='true')
+                                span.visually-hidden Previous
+                            button.carousel-control-next(type='button', data-bs-target='#testimonialCarousel', data-bs-slide='next')
+                                span.carousel-control-next-icon(aria-hidden='true')
+                                span.visually-hidden Next
         // Signup
         section#signup.signup-section
             .container.px-4.px-lg-5

@@ -3,7 +3,13 @@
 // 
 
 .projects-section {
+
     padding: 10rem 0;
+    .row {
+        margin: 0; // Remove default margin
+        padding: 0; // Remove default padding    
+        }
+
 
     .featured-text {
         padding: 2rem;
@@ -22,4 +28,7 @@
             padding: 5rem;
         }
     }
+    
+    
 }
+

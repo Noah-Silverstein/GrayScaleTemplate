@@ -1,0 +1,33 @@
+{
+    "menu": {
+        "menu": "Menu",
+        "about": "About Me",
+        "courses": "Courses",
+        "contact": "Contact"
+    },
+    "masthead": {
+        "title": "Anneke Silverstein's Hebrew School",
+        "description": "A Place for Jewish Learning"
+    },
+
+    "aboutme": {
+        "title": "About Me",
+        "description": "I worked in education for many years as a teacher and a teachers' coach. A career change led me to become a life coach and to work in the Jewish community as an educator and tutor. I was very involved as a volunteer in a wide variety of areas in my own community, from teaching Hebrew school to the Religious Affairs Committee, leading services and organizing events. My passion for Jewish studies led me to combine all three fields, resulting in me starting my own business, 'Silver Linings'. I work individually and in small groups, via Zoom or in person. My background in education allows me to tailor my coaching to each student's unique needs and learning styles and create a customized curriculum. I use my Life Coaching skills to distil the material into small, attainable steps and apply the learning as an opportunity for self-growth. I love to play and I love to learn, and this enthusiasm shines through in my lessons. My love for education and for Jewish learning keeps me going. I have completed a Ba'alat Tfillah training with the Liberal Jewish Community in the UK and a B'nei Mitzvah training through the EUPJ (European Union for Progressive Judaism). Currently I am continuing my own studies at EAJL, the European Academy for Jewish Liturgy in the UK. "
+        
+    },
+
+    "sections": {
+        "bar_mitzvah": {
+            "title": "Bar Mitzvah",
+            "description": "Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources."
+        },
+        "cantillation": {
+            "title": "Cantillation",
+            "description": "Detailed text about what Cantillation is. This section can contain more information and links to other resources."
+        },
+        "biblical_hebrew": {
+            "title": "Biblical Hebrew for Beginners",
+            "description": "Detailed text about what Biblical Hebrew is. This section can contain more information and links to other resources."
+        }
+    }
+}
