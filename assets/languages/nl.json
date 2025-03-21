@@ -1,0 +1,32 @@
+{
+    "menu": {
+        "menu": "Menu",
+        "about": "Over mij",
+        "courses": "Cursussen",
+        "contact": "Contact"
+    },
+    "masthead": {
+        "title": "Anneke Silverstein's Hebreeuwse School",
+        "description": "Een Plek voor Joods Leren"
+    },
+
+    "aboutme": {
+        "title": "Over Mij",
+        "description":"Ik heb jarenlang in het onderwijs gewerkt als docent en docentcoach. Toen ik van carrière veranderde, werd ik Life Coach en daarnaast werkte ik als tutor in mijn Liberale Joodse gemeenschap in Brussel. Ook als vrijwilliger was ik sterk betrokken bij heel wat verschillende gebieden in de gemeenschap: lesgeven in de school, tutoring, het religieus comité, leiden van diensten enz. Mijn passie voor Joodse studies bracht me ertoe om alle drie de vakgebieden te combineren en ik begon mijn eigen bedrijf Silver Linings. Ik werk individueel en in kleine groepen, virtueel en 'life'. Mijn ervaring in het onderwijs stelt me ​​in staat om me aan te passen aan de unieke behoeften en leerstijlen van elke student. Ik gebruik mijn Life Coaching-vaardigheden om de stof op te delen in kleine, haalbare stappen en gebruik het leren als een kans voor zelfgroei. Elke les is afgestemd op een aangepast curriculum. Ik hou van spelen en ik hou van leren, en dat enthousiasme straalt door in mijn lessen. Het lesgeven en mijn liefde voor Joodse kennis bliijven me boeien. Ik heb een Ba'alat Tfillah-training gevolgd bij de Liberal Jewish Community in het Verenigd Koninkrijk en een B'nei Mitzvah-training via de EUPJ, the European Union for Progressive Judaism. Op dit moment vervolg ik mijn eigen studies aan de EAJL - de Europese Academie voor Joodse Liturgie in het Verenigd Koninkrijk."
+    },
+
+    "sections": {
+        "bar_mitzvah": {
+            "title": "Bar Mitzvah",
+            "description": "Wat is een Barmitvah en wat houd de cursus in?"
+        },
+        "cantillation": {
+            "title": "Cantillatie",
+            "description": "Beschrijving cursus Cantillatie en andere dingen"
+        },
+        "biblical_hebrew": {
+            "title": "Bijbels Hebreeuws voor beginners",
+            "description": "Beschrijving cursus bijbels Hebreeuws en andere dingen"
+        }
+    }
+}
