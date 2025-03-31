@@ -40,9 +40,10 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#signup', data-translate='menu.contact') 
                         li.nav-item
-                        select#language-switcher
-                            option(value='en') EN
-                            option(value='nl') NL
+                            .dropdown-wrapper
+                                select#language-switcher
+                                    option(value='en') EN
+                                    option(value='nl') NL
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
@@ -60,37 +61,33 @@ html(lang='en')
                         h2(data-translate= 'aboutme.title') 
                         p.text-justify(data-translate= 'aboutme.description')
 
-        // Courses Overview
+        // Courses Overview with Accordion
         section#projects.projects-section.bg-light
             .container.px-4.px-lg-5
-                // Featured Project Row
-                .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    h4 Courses on offer
-                // Course One Row
+                h4.text-center.mb-4 Courses on Offer
+                .row.justify-content-center
+                    .col-lg-8
+                        .accordion
+                            article
+                                input#course1(type='checkbox', name='courses', data-group='courses')
+                                label(for='course1')
+                                    h2(data-translate= 'courses.bar_mitzvah.title')
+                                div
+                                    p(data-translate= 'courses.bar_mitzvah.description')
 
-                // Course One Row with Collapse
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        .card
-                            // Card Header
-                            .card-header
-                                h4.text-dark.mb-0 Bar Mitzvah
-                            // Card Body
-                            .card-body
-                                .content-wrapper.d-flex
-                                    .image-wrapper
-                                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
-                                    .text-content
-                                        p.mb-0.text-dark-50
-                                            | Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources.
-                                        // Button to toggle collapse
-                                        button.btn.btn-primary.mt-3(type='button', data-bs-toggle='collapse', data-bs-target='#collapseBarMitzvah', aria-expanded='false', aria-controls='collapseBarMitzvah') Learn More
-                            // Collapsible Content
-                            #collapseBarMitzvah.collapse
-                                .card-body
-                                    p.mb-0.text
-                                        | Additional information about Bar Mitzvah. This section can contain links or further details.
-                                    a.btn.btn-secondary.mt-3(href='#barmitzvah') Close
+                            article
+                                input#course2(type='checkbox', name='courses', data-group='courses')
+                                label(for='course2')
+                                    h2(data-translate= 'courses.cantillation.title')
+                                div
+                                    p(data-translate= 'courses.cantillation.description')
+                            article
+                                input#course3(type='checkbox', name='courses', data-group='courses')
+                                label(for='course3')
+                                    h2(data-translate= 'courses.biblical_hebrew.title')
+                                div
+                                    p(data-translate= 'courses.biblical_hebrew.description')
+                            
 
         // Testimonials Section
         section#testimonials.testimonials-section.bg-light

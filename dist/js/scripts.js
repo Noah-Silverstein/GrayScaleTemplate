@@ -78,6 +78,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//Code handling checkboxes in the courses section
+// This code ensures that only one checkbox in the group can be checked at a time
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][data-group="courses"]');
+    const languageSwitcher = document.getElementById('language-switcher');
+
+    // Close open course boxes when clicking outside, except on the language switcher
+    document.addEventListener('click', (event) => {
+        // Check if the click is outside the accordion and not on the language switcher or its options
+        if (
+            !event.target.closest('.accordion') && // Click is outside the accordion
+            !event.target.closest('#language-switcher') // Click is not on the language switcher or its options
+        ) {
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = false; // Uncheck all checkboxes
+            });
+        }
+    });
+
+
+    // Ensure only one course can be open at a time
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                // Close all other checkboxes in the same group
+                checkboxes.forEach((otherCheckbox) => {
+                    if (otherCheckbox !== checkbox) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+            }
+        });
+    });
+});
 //language switcher
 document.addEventListener('DOMContentLoaded', function() {
     const languageSwitcher = document.getElementById('language-switcher');
@@ -109,6 +143,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     loadLanguage(currentLanguage);
+});
+//Code to remove focus from the dropdown after a selection is made
+document.addEventListener('DOMContentLoaded', () => {
+    const languageSwitcher = document.getElementById('language-switcher');
+
+    languageSwitcher.addEventListener('change', () => {
+        // Remove focus from the dropdown after a selection is made
+        languageSwitcher.blur();
+    });
 });
 
 //Code handling number of Testimonials on screen

@@ -29,11 +29,14 @@
                         <li class="nav-item"><a class="nav-link" href="#about" data-translate="menu.about"></a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects" data-translate="menu.courses"></a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup" data-translate="menu.contact"></a></li>
-                        <li class="nav-item"></li>
-                        <select id="language-switcher">
-                            <option value="en">EN</option>
-                            <option value="nl">NL</option>
-                        </select>
+                        <li class="nav-item">
+                            <div class="dropdown-wrapper">
+                                <select id="language-switcher">
+                                    <option value="en">EN</option>
+                                    <option value="nl">NL</option>
+                                </select>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -61,36 +64,28 @@
                 </div>
             </div>
         </section>
-        <!-- Courses Overview-->
+        <!-- Courses Overview with Accordion-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center"><h4>Courses on offer</h4></div>
-                <!-- Course One Row-->
-                <!-- Course One Row with Collapse-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <!-- Card Header-->
-                            <div class="card-header"><h4 class="text-dark mb-0">Bar Mitzvah</h4></div>
-                            <!-- Card Body-->
-                            <div class="card-body">
-                                <div class="content-wrapper d-flex">
-                                    <div class="image-wrapper"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                                    <div class="text-content">
-                                        <p class="mb-0 text-dark-50">Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources.</p>
-                                        <!-- Button to toggle collapse-->
-                                        <button class="btn btn-primary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBarMitzvah" aria-expanded="false" aria-controls="collapseBarMitzvah">Learn More</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Collapsible Content-->
-                            <div class="collapse" id="collapseBarMitzvah">
-                                <div class="card-body">
-                                    <p class="mb-0 text">Additional information about Bar Mitzvah. This section can contain links or further details.</p>
-                                    <a class="btn btn-secondary mt-3" href="#barmitzvah">Close</a>
-                                </div>
-                            </div>
+                <h4 class="text-center mb-4">Courses on Offer</h4>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion">
+                            <article>
+                                <input id="course1" type="checkbox" name="courses" data-group="courses" />
+                                <label for="course1"><h2 data-translate="courses.bar_mitzvah.title"></h2></label>
+                                <div><p data-translate="courses.bar_mitzvah.description"></p></div>
+                            </article>
+                            <article>
+                                <input id="course2" type="checkbox" name="courses" data-group="courses" />
+                                <label for="course2"><h2 data-translate="courses.cantillation.title"></h2></label>
+                                <div><p data-translate="courses.cantillation.description"></p></div>
+                            </article>
+                            <article>
+                                <input id="course3" type="checkbox" name="courses" data-group="courses" />
+                                <label for="course3"><h2 data-translate="courses.biblical_hebrew.title"></h2></label>
+                                <div><p data-translate="courses.biblical_hebrew.description"></p></div>
+                            </article>
                         </div>
                     </div>
                 </div>

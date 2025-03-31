@@ -1,0 +1,57 @@
+.accordion {
+    width: 100%; // Inherit the width of the parent container
+    margin: 0 auto;
+    text-align: left;
+}
+
+article {
+    border: 1px solid #333;
+    padding: 1em;
+    margin-bottom: 1em; // Add spacing between articles
+    background-color: #f8f9fa;
+    color: #333;
+    width: 100%; // Ensure articles take up the full width of the parent container
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: fixed;
+    top: -100vh; left: -100vh;
+
+    & ~ div {
+        max-height: 0; // Initially collapsed
+        overflow: hidden;
+        transition: max-height 0.3s ease-out; // Smooth expansion
+    }
+
+    &:checked ~ div {
+        max-height: 1000px; // Large enough value to fit any content
+        transition: max-height 0.5s ease-in; // Immediate collapse
+    }
+}
+
+label {
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5em;
+    padding-right: 1.5em; // Add space for the icon
+    position: relative; // Make the label the positioning context for the icon
+}
+
+label::after {
+    content: '+'; // Default icon
+    position: absolute;
+    top: 0; // Align to the top
+    right: 0; // Align to the right
+    font-size: 1.2em;
+    transition: transform 0.3s ease; // Smooth rotation
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: '-'; // Change to minus when expanded
+}
+
+p {
+    margin-top: 1em; // Add margin to the paragraph for additional spacing
+}
