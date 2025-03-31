@@ -16,18 +16,21 @@
         
     },
 
-    "sections": {
+    "courses": {
         "bar_mitzvah": {
             "title": "Bar Mitzvah",
-            "description": "Detailed text about what Bar Mitzvah is. This section can contain more information and links to other resources."
+            "blurb": "short blurb/description of the course",
+            "description": " English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ipsum sed nibh consequat egestas. Vivamus vestibulum mauris sed eros vestibulum mollis dictum nec eros. Quisque fringilla eleifend metus. Praesent ultrices sapien id lacus elementum malesuada. Suspendisse vulputate leo id est tempor, vitae tincidunt mi vestibulum. Integer nibh nisi, placerat vel massa id, vehicula ultricies orci. Proin ut nulla vel lacus efficitur varius. Mauris quis vehicula sem, vitae molestie neque. Praesent et neque vitae diam scelerisque tincidunt. "
         },
         "cantillation": {
             "title": "Cantillation",
-            "description": "Detailed text about what Cantillation is. This section can contain more information and links to other resources."
+            "blurb": "short blurb/description of the course",
+            "description": " English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ipsum sed nibh consequat egestas. Vivamus vestibulum mauris sed eros vestibulum mollis dictum nec eros. Quisque fringilla eleifend metus. Praesent ultrices sapien id lacus elementum malesuada. Suspendisse vulputate leo id est tempor, vitae tincidunt mi vestibulum. Integer nibh nisi, placerat vel massa id, vehicula ultricies orci. Proin ut nulla vel lacus efficitur varius. Mauris quis vehicula sem, vitae molestie neque. Praesent et neque vitae diam scelerisque tincidunt. "
         },
         "biblical_hebrew": {
             "title": "Biblical Hebrew for Beginners",
-            "description": "Detailed text about what Biblical Hebrew is. This section can contain more information and links to other resources."
+            "blurb": "short blurb/description of the course",
+            "description": " English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ipsum sed nibh consequat egestas. Vivamus vestibulum mauris sed eros vestibulum mollis dictum nec eros. Quisque fringilla eleifend metus. Praesent ultrices sapien id lacus elementum malesuada. Suspendisse vulputate leo id est tempor, vitae tincidunt mi vestibulum. Integer nibh nisi, placerat vel massa id, vehicula ultricies orci. Proin ut nulla vel lacus efficitur varius. Mauris quis vehicula sem, vitae molestie neque. Praesent et neque vitae diam scelerisque tincidunt. "
         }
     }
 }
