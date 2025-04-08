@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
 //Code handling checkboxes in the courses section
 // This code ensures that only one checkbox in the group can be checked at a time
 document.addEventListener('DOMContentLoaded', () => {
@@ -112,7 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 //language switcher
+// This code handles the language switcher functionality
+// It loads the appropriate language file and updates the text content of elements with the data-translate attribute
 document.addEventListener('DOMContentLoaded', function() {
     const languageSwitcher = document.getElementById('language-switcher');
     const defaultLanguage = 'en';
@@ -131,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     keys.forEach(key => {
                         translation = translation[key];
                     });
-                    element.textContent = translation;
+                    // Use innerHTML to render HTML tags like <br>
+                    element.innerHTML = translation;
                 });
             });
     }
@@ -144,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadLanguage(currentLanguage);
 });
+
 //Code to remove focus from the dropdown after a selection is made
 document.addEventListener('DOMContentLoaded', () => {
     const languageSwitcher = document.getElementById('language-switcher');
