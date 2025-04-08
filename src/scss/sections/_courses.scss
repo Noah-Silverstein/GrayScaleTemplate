@@ -1,14 +1,18 @@
 // 
-// Projects
+// courses
 // 
 
-.projects-section {
+.courses-section {
 
     padding: 10rem 0;
     .row {
         margin: 0; // Remove default margin
         padding: 0; // Remove default padding    
         }
+
+    .col-lg-6 {
+        background-color: $primary;
+    }
 
 
     .featured-text {
@@ -20,7 +24,7 @@
         }
     }
 
-    .project-text {
+    .courses-text {
         padding: 3rem;
         font-size: 90%;
 

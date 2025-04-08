@@ -7,8 +7,8 @@
     color:$black;
     background: linear-gradient(to bottom,
         $secondary 0%,
-        #{fade-out($secondary, 0.1)} 75%,
-        #{fade-out($secondary, 0.2)} 100%);
+        #{rgba($secondary, 0.1)} 75%,
+        #{rgba($secondary, 0.2)} 100%);
 
     p {
         margin-bottom: 5rem;

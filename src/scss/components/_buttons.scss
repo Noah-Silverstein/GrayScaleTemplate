@@ -3,11 +3,18 @@
 // 
 
 .btn {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba($black,0.1) !important;
+    background-color: $accent;
     padding: 1.25rem 2rem;
     font-family: $font-family-special;
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     border: 0;
+
+    &:hover{
+        background-color: $secondary-accent !important;
+        color: $white;
+    }
+
 }

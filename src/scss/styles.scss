@@ -19,11 +19,11 @@
 // Sections
 @import "./sections/masthead.scss";
 @import "./sections/about.scss";
-@import "./sections/projects.scss";
+@import "./sections/courses.scss";
 @import "./sections/signup.scss";
 @import "./sections/contact.scss";
 @import "./sections/footer.scss";
-@import "./sections/courseinfo.scss";
-@import "./sections/courseflipcards.scss";
 @import "./sections/testimonials.scss";
-@import "./sections/coursecollapse.scss";
+
+// Pages
+@import "./sections/coursepage.scss";

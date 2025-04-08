@@ -16,7 +16,7 @@ $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black: #000;
+$black: #000000;
 
 // Colors
 
@@ -27,17 +27,14 @@ $yellow: #e4c662;
 $green: #67c29c;
 $cyan: #1cabc4;
 
-// Color Palette
 
-$myprimary: #236285;
-$mysecondary: #cfecf3;
-$accent: #9fd5e8;
+//Color Palette
 
 
-// State colors
-
-$primary: $myprimary;
-$secondary:$mysecondary;
+$primary: #055169;
+$secondary:#017F8D;
+$accent: #D19525;
+$secondary-accent: #ECB920;
 $success: $green;
 $info: $cyan;
 $warning: $yellow;

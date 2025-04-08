@@ -27,7 +27,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Anneke's Place
+                a.navbar-brand(href='#page-top', data-translate='menu.title') 
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -35,8 +35,16 @@ html(lang='en')
                     ul.navbar-nav.ms-auto
                         li.nav-item
                             a.nav-link(href='#about', data-translate='menu.about') 
-                        li.nav-item
-                            a.nav-link(href='#projects', data-translate='menu.courses') 
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#courses', id='coursesDropdown', role='button', data-bs-toggle='dropdown', aria-expanded='false') Courses
+                            ul.dropdown-menu(aria-labelledby='coursesDropdown')
+                                li
+                                    a.dropdown-item(href='/bar-mitzvah.html') Bar Mitzvah
+                                li
+                                    a.dropdown-item(href='/cantillation.html') Cantillation
+                                li
+                                    a.dropdown-item(href='/biblical-hebrew.html') Biblical Hebrew
+
                         li.nav-item
                             a.nav-link(href='#signup', data-translate='menu.contact') 
                         li.nav-item
@@ -51,7 +59,6 @@ html(lang='en')
                     .text-center
                         h1.mx-auto.my-0.text-uppercase(data-translate='masthead.title') 
                         p.mb-0.text-black-50(data-translate='masthead.description') 
-                        //a.btn.btn-primary(href='#about') button 
 
         // About
         section#about.about-section.text-center
@@ -61,33 +68,48 @@ html(lang='en')
                         h2(data-translate= 'aboutme.title') 
                         p.text-justify(data-translate= 'aboutme.description')
 
-        // Courses Overview with Accordion
-        section#projects.projects-section.bg-light
-            .container.px-4.px-lg-5
-                h4.text-center.mb-4 Courses on Offer
-                .row.justify-content-center
-                    .col-lg-8
-                        .accordion
-                            article
-                                input#course1(type='checkbox', name='courses', data-group='courses')
-                                label(for='course1')
-                                    h2(data-translate= 'courses.bar_mitzvah.title')
-                                div
-                                    p(data-translate= 'courses.bar_mitzvah.description')
 
-                            article
-                                input#course2(type='checkbox', name='courses', data-group='courses')
-                                label(for='course2')
-                                    h2(data-translate= 'courses.cantillation.title')
-                                div
-                                    p(data-translate= 'courses.cantillation.description')
-                            article
-                                input#course3(type='checkbox', name='courses', data-group='courses')
-                                label(for='course3')
-                                    h2(data-translate= 'courses.biblical_hebrew.title')
-                                div
-                                    p(data-translate= 'courses.biblical_hebrew.description')
-                            
+
+        // Projects
+        section#courses.courses-section.bg-light
+            .container.px-4.px-lg-5
+               
+                // course One Row
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/bar-mitvah.png', alt='...')
+                    .col-lg-6
+                        .text-center.h-100.project
+                            .d-flex.h-100
+                                .courses-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white(data-translate='courses.bar-mitzvah.title') 
+                                    p.mb-0.text-white-50(data-translate='courses.bar-mitzvah.blurb')
+                                    a.btn.btn-primary.mt-3(href='/bar-mitzvah.html') Learn More
+
+                // course Two Row
+                .row.gx-0.justify-content-center
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/bar-mitvah.png', alt='...')
+                    .col-lg-6.order-lg-first
+                        .text-center.h-100.project
+                            .d-flex.h-100
+                                .courses-text.w-100.my-auto.text-center.text-lg-right
+                                    h4.text-white(data-translate='courses.cantillation.title') 
+                                    p.mb-0.text-white-50(data-translate='courses.cantillation.blurb') 
+                                    a.btn.btn-primary.mt-3(href='/cantillation.html') Learn More
+                                    
+                // course three Row
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/bar-mitvah.png', alt='...')
+                    .col-lg-6
+                        .text-center.h-100.project
+                            .d-flex.h-100
+                                .courses-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white(data-translate='courses.biblical-hebrew.title') 
+                                    p.mb-0.text-white-50(data-translate='courses.biblical-hebrew.blurb') 
+                                    a.btn.btn-primary.mt-3(href='/biblical-hebrew.html') Learn More
+
 
         // Testimonials Section
         section#testimonials.testimonials-section.bg-light
@@ -194,7 +216,7 @@ html(lang='en')
                                 .text-center.text-danger.mb-3.mt-2 Error sending message!
 
         // Contact
-        section.contact-section.bg-black
+        section.contact-section
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5
                     .col-md-4.mb-3.mb-md-0
@@ -226,7 +248,7 @@ html(lang='en')
                         i.fab.fa-instagram
 
         // Footer
-        footer.footer.bg-black.small.text-center.text-white-50
+        footer.footer.small.text-center.text-white-50
             .container.px-4.px-lg-5
                 | Copyright &copy; Your Website 2023
 

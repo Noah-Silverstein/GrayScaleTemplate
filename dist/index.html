@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Anneke's Place</a>
+                <a class="navbar-brand" href="#page-top" data-translate="menu.title"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -27,7 +27,14 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about" data-translate="menu.about"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects" data-translate="menu.courses"></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#courses" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                            <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                                <li><a class="dropdown-item" href="/bar-mitzvah.html">Bar Mitzvah</a></li>
+                                <li><a class="dropdown-item" href="/cantillation.html">Cantillation</a></li>
+                                <li><a class="dropdown-item" href="/biblical-hebrew.html">Biblical Hebrew</a></li>
+                            </ul>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="#signup" data-translate="menu.contact"></a></li>
                         <li class="nav-item">
                             <div class="dropdown-wrapper">
@@ -48,7 +55,6 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase" data-translate="masthead.title"></h1>
                         <p class="mb-0 text-black-50" data-translate="masthead.description"></p>
-                        <!--a.btn.btn-primary(href='#about') button -->
                     </div>
                 </div>
             </div>
@@ -64,28 +70,51 @@
                 </div>
             </div>
         </section>
-        <!-- Courses Overview with Accordion-->
-        <section class="projects-section bg-light" id="projects">
+        <!-- Projects-->
+        <section class="courses-section bg-light" id="courses">
             <div class="container px-4 px-lg-5">
-                <h4 class="text-center mb-4">Courses on Offer</h4>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="accordion">
-                            <article>
-                                <input id="course1" type="checkbox" name="courses" data-group="courses" />
-                                <label for="course1"><h2 data-translate="courses.bar_mitzvah.title"></h2></label>
-                                <div><p data-translate="courses.bar_mitzvah.description"></p></div>
-                            </article>
-                            <article>
-                                <input id="course2" type="checkbox" name="courses" data-group="courses" />
-                                <label for="course2"><h2 data-translate="courses.cantillation.title"></h2></label>
-                                <div><p data-translate="courses.cantillation.description"></p></div>
-                            </article>
-                            <article>
-                                <input id="course3" type="checkbox" name="courses" data-group="courses" />
-                                <label for="course3"><h2 data-translate="courses.biblical_hebrew.title"></h2></label>
-                                <div><p data-translate="courses.biblical_hebrew.description"></p></div>
-                            </article>
+                <!-- course One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/bar-mitvah.png" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="courses-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white" data-translate="courses.bar-mitzvah.title"></h4>
+                                    <p class="mb-0 text-white-50" data-translate="courses.bar-mitzvah.blurb"></p>
+                                    <a class="btn btn-primary mt-3" href="/bar-mitzvah.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- course Two Row-->
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/bar-mitvah.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="courses-text w-100 my-auto text-center text-lg-right">
+                                    <h4 class="text-white" data-translate="courses.cantillation.title"></h4>
+                                    <p class="mb-0 text-white-50" data-translate="courses.cantillation.blurb"></p>
+                                    <a class="btn btn-primary mt-3" href="/cantillation.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- course three Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/bar-mitvah.png" alt="..." /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="courses-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white" data-translate="courses.biblical-hebrew.title"></h4>
+                                    <p class="mb-0 text-white-50" data-translate="courses.biblical-hebrew.blurb"></p>
+                                    <a class="btn btn-primary mt-3" href="/biblical-hebrew.html">Learn More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -212,7 +241,7 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section class="contact-section">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -253,7 +282,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
+        <footer class="footer small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

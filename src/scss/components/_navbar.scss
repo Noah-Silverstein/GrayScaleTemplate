@@ -1,15 +1,27 @@
 // 
 // Navbar
 // 
-
+#mainNav .navbar-nav .nav-link {
+    color: rgba($black, 1) !important; // Force the color to override
+}
 #mainNav {
     min-height: 3.5rem;
     background-color: $secondary;
 
+    .nav-link {
+        
+
+        &:hover{
+            color: rgba($secondary-accent, 0.8); // 80% opacity
+            outline: none;
+            background-color: transparent;
+        }
+    }
+
     .navbar-toggler {
         font-size: 80%;
         padding: 0.75rem;
-        color: $primary;
+        color: $black;
         border: $border-width solid $primary;
 
         &:focus {
@@ -26,7 +38,7 @@
     .navbar-nav {
         .nav-item {
             &:hover {
-                color: fade($accent, 80%);
+                color: rgba($secondary-accent, 0.8); // 80% opacity
                 outline: none;
                 background-color: transparent;
             }
@@ -39,6 +51,10 @@
         }
     }
 
+    #language-switcher {
+        margin-left: 1rem; // Space between the select and other nav items
+    }
+
     @include media-breakpoint-up(lg) {
         padding-top: 0;
         padding-bottom: 0;
@@ -49,16 +65,16 @@
         //logo left hand screen 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: fade-out($black, 0.5);   
+            color: rgba($black, 0.5); // 80% opacity;   
         }
         //nav links right hand screen (about me, courses, ... etc)
         .nav-link {
             transition: none;
             padding: 2rem 1.5rem;
-            color: fade-out($black, 0.5);
+            color: rgba($black, 0.5);
 
             &:hover {
-                color: fade-out($accent, 0.25);
+                color: rgba($primary, 0.25);
             }
 
             &:active {

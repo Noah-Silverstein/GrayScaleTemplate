@@ -1,0 +1,38 @@
+
+
+.course-page {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 10rem 0; // Adjust padding as needed
+    background: linear-gradient(to bottom,
+        #{rgba($primary, 0.7)} 0%,
+        #{rgba($secondary, 0.3)} 75%,
+        $secondary 100%),
+    url("../assets/img/blue-sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+
+    .row {
+        margin: 0; // Remove default margin
+        padding: 0; // Remove default padding
+    }
+
+    .col-lg-6 {
+        background-color: rgba(255, 255, 255, 0.8); // Optional: Add a semi-transparent background for content
+        padding: 2rem; // Add padding for content
+        border-radius: 0.5rem; // Optional: Add rounded corners
+    }
+
+    h2 {
+        color: #fff; // White text for headings
+    }
+
+    p {
+        color: #ddd; // Light gray text for paragraphs
+    }
+}
