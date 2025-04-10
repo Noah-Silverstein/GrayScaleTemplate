@@ -9,30 +9,44 @@
     },
     "masthead": {
         "title": "Silver Linings Learning",
-        "description": "Welcome to Silver Linings Learning <br> Have a look around <br> I hope you'll get inspired!"
+        "subtitle": "landingpage/masthead.md"
     },
 
     "aboutme": {
         "title": "About Me",
-        "description": "I worked in education for many years as a teacher and a teachers' coach. A career change led me to become a life coach and to work in the Jewish community as an educator and tutor. I was very involved as a volunteer in a wide variety of areas in my own community, from teaching Hebrew school to the Religious Affairs Committee, leading services and organizing events. My passion for Jewish studies led me to combine all three fields, resulting in me starting my own business, 'Silver Linings'. <br> <br> I work individually and in small groups, via Zoom or in person. My background in education allows me to tailor my lessons to each student's unique needs and learning styles. I strongly believe in my, 'small steps' curriculum approach, it breaks down complex skills and concepts into smaller, manageable, and achievable learning steps, making learning more accessible and reinforcing success. I see all learning as an opportunity for self-growth. I love to play and I love to learn, and this enthusiasm shines through in my lessons. <br> <br> My love for education and for Jewish learning keeps me going. I have completed a Ba'alei Tefillah training with the Liberal Jewish Community in the UK and a B'nei Mitzvah Teacher Training through the EUPJ (European Union for Progressive Judaism). Currently I am continuing my own studies at EAJL, the European Academy for Jewish Liturgy in the UK. "
-        
+        "content": "landingpage/aboutme.md"
+
     },
 
     "courses": {
-        "bar-mitzvah": {
+        "barmitzvah": {
             "title": "Raising the Bar: B'nei Mitzvah Learning",
-            "blurb": "Personalized Bar/Bat Mitzvah lessons for children and adults, rooted in a unique approach that prioritizes individual learning styles and personal growth.",
-            "description": " English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ipsum sed nibh consequat egestas. Vivamus vestibulum mauris sed eros vestibulum mollis dictum nec eros. Quisque fringilla eleifend metus. Praesent ultrices sapien id lacus elementum malesuada. Suspendisse vulputate leo id est tempor, vitae tincidunt mi vestibulum. Integer nibh nisi, placerat vel massa id, vehicula ultricies orci. Proin ut nulla vel lacus efficitur varius. Mauris quis vehicula sem, vitae molestie neque. Praesent et neque vitae diam scelerisque tincidunt. "
+            "content": "landingpage/barmitzvahblurb.md"
+
         },
         "cantillation": {
             "title": "Tricks of the Trope: The art of Cantillation",
-            "blurb": "A highly interactive and skill-focused course for total beginners, advanced beginners or anyone who needs a refresher course. Torah/Haftarah/High Holidays Online or in person.",
-            "description": " A highly interactive and skill-focused Cantillation Course of 10 sessions for total beginners or anyone who needs a refresher's course. <br> Torah/Haftarah/High Holidays "
+            "content": "landingpage/cantillationblurb.md"
         },
-        "biblical-hebrew": {
+        "biblicalhebrew": {
             "title": "Beyond the Aleph Bet: Biblical Hebrew for Beginners",
-            "blurb": "A highly interactive and skill-focused Biblical Hebrew course 10 sessions online or in person. for beginners of all ages.",
-            "description": " English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ipsum sed nibh consequat egestas. Vivamus vestibulum mauris sed eros vestibulum mollis dictum nec eros. Quisque fringilla eleifend metus. Praesent ultrices sapien id lacus elementum malesuada. Suspendisse vulputate leo id est tempor, vitae tincidunt mi vestibulum. Integer nibh nisi, placerat vel massa id, vehicula ultricies orci. Proin ut nulla vel lacus efficitur varius. Mauris quis vehicula sem, vitae molestie neque. Praesent et neque vitae diam scelerisque tincidunt. "
+            "content": "landingpage/biblicalhebrewblurb.md"
         }
+    },
+
+
+    "barmitzvahpage": {
+        "title": "Raising the Bar: B'nei Mitzvah Learning",
+        "content": "barmitzvah/description.md"
+    },
+
+    "cantillationpage": {
+        "title": "Tricks of the Trope: The art of Cantillation",
+        "content": "cantillation/description.md"
+    },
+
+    "biblicalhebrewpage": {
+        "title": "Beyond the Aleph Bet: Biblical Hebrew for Beginners",
+        "content": "biblicalhebrew/description.md"
     }
-}
+}   

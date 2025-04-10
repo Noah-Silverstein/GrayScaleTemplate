@@ -32,17 +32,19 @@
             text-align: center;
             height: 3rem;
             width: 3rem;
-            background: rgba($white, 0.9);
+            background: rgba($accent, 0.9);
             border-radius: 100%;
             line-height: 3rem;
-            color: rgba($white, 0.7);
+            color: rgba($primary, 0.7);
 
             &:hover {
-                color: rgba($white, 0.5);
+                color: rgba($primary, 0.5);
+                background: rgba($secondary-accent, 0.9);
+
             }
 
             &:active {
-                color: $white;
+                color: $secondary-accent;
             }
         }
     }

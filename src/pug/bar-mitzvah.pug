@@ -3,5 +3,35 @@ extends layout
 block content
     section.course-page
         .container.px-4.px-lg-5
-            h2 Bar Mitzvah
-            p This is where you can add details about the Bar Mitzvah course.
+            h2(data-translate = 'barmitzvahpage.title') 
+            p.text-black(data-translate = 'barmitzvahpage.content')
+
+    //Testimonials Section
+    section.testimonials
+        .container.px-4.px-lg-5.py-5
+            h3.text-center.mb-4 Testimonials
+            .carousel.slide#carouselExampleIndicators(data-bs-ride='carousel')
+                .carousel-inner
+                    .carousel-item.active
+                        .testimonial
+                            p.text-black "This program was life-changing for my son. He learned so much and felt confident during his Bar Mitzvah."
+                            footer.text-muted - Parent of a student
+                    .carousel-item
+                        .testimonial
+                            p.text-black "Anneke's teaching style is so engaging. My daughter loved every lesson!"
+                            footer.text-muted - Another parent
+                    .carousel-item
+                        .testimonial
+                            p.text-black "I highly recommend this program to anyone preparing for a Bar Mitzvah."
+                            footer.text-muted - Happy student
+                ol.carousel-indicators
+                    li(data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active')
+                    li(data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1')
+                    li(data-bs-target='#carouselExampleIndicators', data-bs-slide-to='2')
+
+                a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-bs-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.visually-hidden Previous
+                a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-bs-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.visually-hidden Next

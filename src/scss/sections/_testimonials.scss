@@ -1,14 +1,15 @@
 .testimonial-card {
     background-color:$white; ;
     border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
+    box-shadow: 0 4px 6px rgba($black, 0.1);
+
+    margin: 5rem 0;
 
     .card-body {
         text-align: center;
         p {
             font-style: italic;
-            color: #6c757d;
+            color: $black;
         }
         h5 {
             margin-top: 10px;
@@ -21,8 +22,4 @@
     justify-content: center; // Center testimonials horizontally
     align-items: center; // Center testimonials vertically (if needed)
     margin: 0 auto; // Ensure the row is centered within the container
-}
-
-.testimonial-card {
-    margin: 10px; // Add spacing between cards
 }

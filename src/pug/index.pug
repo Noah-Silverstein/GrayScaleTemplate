@@ -27,14 +27,14 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top', data-translate='menu.title') 
+                a.navbar-brand(href='#page-top') Silver Linings Learning
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#about', data-translate='menu.about') 
+                            a.nav-link(href='#about', data-translate='menu.about')
                         li.nav-item.dropdown
                             a.nav-link.dropdown-toggle(href='#courses', id='coursesDropdown', role='button', data-bs-toggle='dropdown', aria-expanded='false') Courses
                             ul.dropdown-menu(aria-labelledby='coursesDropdown')
@@ -46,7 +46,7 @@ html(lang='en')
                                     a.dropdown-item(href='/biblical-hebrew.html') Biblical Hebrew
 
                         li.nav-item
-                            a.nav-link(href='#signup', data-translate='menu.contact') 
+                            a.nav-link(href='#signup') Contact
                         li.nav-item
                             .dropdown-wrapper
                                 select#language-switcher
@@ -57,16 +57,16 @@ html(lang='en')
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
                 .d-flex.justify-content-center
                     .text-center
-                        h1.mx-auto.my-0.text-uppercase(data-translate='masthead.title') 
-                        p.mb-0.text-black-50(data-translate='masthead.description') 
+                        h1.text-uppercase(data-translate='masthead.title') 
+                        p.mb-0.text-black(data-translate='masthead.subtitle') 
 
         // About
         section#about.about-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2(data-translate= 'aboutme.title') 
-                        p.text-justify(data-translate= 'aboutme.description')
+                        h2(data-translate= "aboutme.title") 
+                        p.text-justify(data-translate= "aboutme.content")
 
 
 
@@ -82,8 +82,8 @@ html(lang='en')
                         .text-center.h-100.project
                             .d-flex.h-100
                                 .courses-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white(data-translate='courses.bar-mitzvah.title') 
-                                    p.mb-0.text-white-50(data-translate='courses.bar-mitzvah.blurb')
+                                    h4.text-white(data-translate='courses.barmitzvah.title') 
+                                    p.mb-0.text-white-50(data-translate='courses.barmitzvah.content')
                                     a.btn.btn-primary.mt-3(href='/bar-mitzvah.html') Learn More
 
                 // course Two Row
@@ -95,7 +95,7 @@ html(lang='en')
                             .d-flex.h-100
                                 .courses-text.w-100.my-auto.text-center.text-lg-right
                                     h4.text-white(data-translate='courses.cantillation.title') 
-                                    p.mb-0.text-white-50(data-translate='courses.cantillation.blurb') 
+                                    p.mb-0.text-white-50(data-translate='courses.cantillation.content') 
                                     a.btn.btn-primary.mt-3(href='/cantillation.html') Learn More
                                     
                 // course three Row
@@ -106,114 +106,14 @@ html(lang='en')
                         .text-center.h-100.project
                             .d-flex.h-100
                                 .courses-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white(data-translate='courses.biblical-hebrew.title') 
-                                    p.mb-0.text-white-50(data-translate='courses.biblical-hebrew.blurb') 
+                                    h4.text-white(data-translate='courses.biblicalhebrew.title') 
+                                    p.mb-0.text-white-50(data-translate='courses.biblicalhebrew.content') 
                                     a.btn.btn-primary.mt-3(href='/biblical-hebrew.html') Learn More
 
 
         // Testimonials Section
-        section#testimonials.testimonials-section.bg-light
-            .container.px-4.px-lg-5
-                h4.text-center.mb-4 Testimonials
-                .row.justify-content-center
-                    .col-lg-10
-                        .carousel.slide#testimonialCarousel(data-bs-ride='carousel')
-                            .carousel-inner
-                                .carousel-item.active
-                                    .row.testimonial-row
-                                        // All testimonials will be dynamically adjusted
-                                        .col-md-4
-                                            .card.testimonial-card
-                                                .card-body
-                                                    p "This is the first testimonial. It's amazing!"
-                                                    h5.text-primary John Doe
-                                        .col-md-4
-                                            .card.testimonial-card
-                                                .card-body
-                                                    p "This is the second testimonial. It's fantastic!"
-                                                    h5.text-primary Jane Smith
-                                        .col-md-4
-                                            .card.testimonial-card
-                                                .card-body
-                                                    p "This is the third testimonial. It's wonderful!"
-                                                    h5.text-primary Alice Johnson
-                                        .col-md-4
-                                            .card.testimonial-card
-                                                .card-body
-                                                    p "This is the fourth testimonial. It's inspiring!"
-                                                    h5.text-primary Bob Brown
-                                        .col-md-4
-                                            .card.testimonial-card
-                                                .card-body
-                                                    p "This is the fifth testimonial. It's incredible!"
-                                                    h5.text-primary Sarah White
-                                        .col-md-4
-                                            .card.testimonial-card
-                                                .card-body
-                                                    p "This is the sixth testimonial. It's life-changing!"
-                                                    h5.text-primary Michael Green
-                            // Carousel Controls
-                            button.carousel-control-prev(type='button', data-bs-target='#testimonialCarousel', data-bs-slide='prev')
-                                span.carousel-control-prev-icon(aria-hidden='true')
-                                span.visually-hidden Previous
-                            button.carousel-control-next(type='button', data-bs-target='#testimonialCarousel', data-bs-slide='next')
-                                span.carousel-control-next-icon(aria-hidden='true')
-                                span.visually-hidden Next
-        // Signup
-        section#signup.signup-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-                        
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
+        
+       
 
         // Contact
         section.contact-section
@@ -256,7 +156,7 @@ html(lang='en')
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
-        script(src='js/scripts.js')
+        script(type="module" src='js/scripts.js')
 
         // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
         // * *                               SB Forms JS                               * *

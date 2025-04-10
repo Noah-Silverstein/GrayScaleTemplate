@@ -35,7 +35,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #055169;
-  --bs-secondary: #017F8D;
+  --bs-secondary: #D19525;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
   --bs-warning: #e4c662;
@@ -45,7 +45,7 @@
   --bs-black: #000000;
   --bs-white: #fff;
   --bs-primary-rgb: 5, 81, 105;
-  --bs-secondary-rgb: 1, 127, 141;
+  --bs-secondary-rgb: 209, 149, 37;
   --bs-success-rgb: 103, 194, 156;
   --bs-info-rgb: 28, 171, 196;
   --bs-warning-rgb: 228, 198, 98;
@@ -2863,19 +2863,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #017F8D;
-  --bs-btn-border-color: #017F8D;
+  --bs-btn-bg: #D19525;
+  --bs-btn-border-color: #D19525;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #016c78;
-  --bs-btn-hover-border-color: #016671;
-  --bs-btn-focus-shadow-rgb: 39, 146, 158;
+  --bs-btn-hover-bg: #b27f1f;
+  --bs-btn-hover-border-color: #a7771e;
+  --bs-btn-focus-shadow-rgb: 216, 165, 70;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #016671;
-  --bs-btn-active-border-color: #015f6a;
+  --bs-btn-active-bg: #a7771e;
+  --bs-btn-active-border-color: #9d701c;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #017F8D;
-  --bs-btn-disabled-border-color: #017F8D;
+  --bs-btn-disabled-bg: #D19525;
+  --bs-btn-disabled-border-color: #D19525;
 }
 
 .btn-success {
@@ -3032,19 +3032,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #017F8D;
-  --bs-btn-border-color: #017F8D;
+  --bs-btn-color: #D19525;
+  --bs-btn-border-color: #D19525;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #017F8D;
-  --bs-btn-hover-border-color: #017F8D;
-  --bs-btn-focus-shadow-rgb: 1, 127, 141;
+  --bs-btn-hover-bg: #D19525;
+  --bs-btn-hover-border-color: #D19525;
+  --bs-btn-focus-shadow-rgb: 209, 149, 37;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #017F8D;
-  --bs-btn-active-border-color: #017F8D;
+  --bs-btn-active-bg: #D19525;
+  --bs-btn-active-border-color: #D19525;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #017F8D;
+  --bs-btn-disabled-color: #D19525;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #017F8D;
+  --bs-btn-disabled-border-color: #D19525;
   --bs-gradient: none;
 }
 
@@ -4734,12 +4734,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  --bs-alert-color: #014c55;
-  --bs-alert-bg: #cce5e8;
-  --bs-alert-border-color: #b3d9dd;
+  --bs-alert-color: #7d5916;
+  --bs-alert-bg: #f6ead3;
+  --bs-alert-border-color: #f1dfbe;
 }
 .alert-secondary .alert-link {
-  color: #013d44;
+  color: #644712;
 }
 
 .alert-success {
@@ -5121,17 +5121,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-secondary {
-  color: #014c55;
-  background-color: #cce5e8;
+  color: #7d5916;
+  background-color: #f6ead3;
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #014c55;
-  background-color: #b8ced1;
+  color: #7d5916;
+  background-color: #ddd3be;
 }
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #014c55;
-  border-color: #014c55;
+  background-color: #7d5916;
+  border-color: #7d5916;
 }
 
 .list-group-item-success {
@@ -6775,7 +6775,7 @@ textarea.form-control-lg {
 
 .text-bg-secondary {
   color: #fff !important;
-  background-color: RGBA(1, 127, 141, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(209, 149, 37, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -6826,10 +6826,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #017F8D !important;
+  color: #D19525 !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #016671 !important;
+  color: #a7771e !important;
 }
 
 .link-success {
@@ -11002,7 +11002,7 @@ body {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000000;
+  color: #D19525;
   font-weight: 700;
   padding: 0.9rem 0;
 }
@@ -11028,7 +11028,7 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
   }
   #mainNav .nav-link {
     transition: none;
@@ -11146,6 +11146,7 @@ body {
   letter-spacing: 0.8rem;
   -webkit-background-clip: text;
           background-clip: text;
+  margin-bottom: 3rem;
 }
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
@@ -11174,12 +11175,15 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 5rem;
   color: #000000;
   background: linear-gradient(to bottom, #017F8D 0%, rgba(1, 127, 141, 0.1) 75%, rgba(1, 127, 141, 0.2) 100%);
 }
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+}
+.about-section h2, .about-section .h2 {
+  margin-bottom: 3rem;
 }
 
 .courses-section {
@@ -11253,49 +11257,22 @@ body {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(209, 149, 37, 0.9);
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(5, 81, 105, 0.7);
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(5, 81, 105, 0.5);
+  background: rgba(236, 185, 32, 0.9);
 }
 .contact-section .social a:active {
-  color: #fff;
+  color: #ECB920;
 }
 
 .footer {
   padding: 5rem 0;
   background-color: #017F8D;
-}
-
-.testimonial-card {
-  background-color: #fff;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 10px 0;
-}
-.testimonial-card .card-body {
-  text-align: center;
-}
-.testimonial-card .card-body p {
-  font-style: italic;
-  color: #6c757d;
-}
-.testimonial-card .card-body h5, .testimonial-card .card-body .h5 {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.testimonial-row {
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.testimonial-card {
-  margin: 10px;
 }
 
 .course-page {
@@ -11320,8 +11297,13 @@ body {
   border-radius: 0.5rem;
 }
 .course-page h2, .course-page .h2 {
-  color: #fff;
+  margin-bottom: 5rem;
 }
-.course-page p {
-  color: #ddd;
+
+.carousel-indicators li {
+  background-color: rgba(5, 81, 105, 0.7) !important;
+}
+
+.carousel-indicators .active {
+  background-color: #055169;
 }

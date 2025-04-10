@@ -30,7 +30,7 @@
     }
 
     .navbar-brand {
-        color: $black;
+        color: $accent;
         font-weight: 700;
         padding: 0.9rem 0;
     }
@@ -65,7 +65,7 @@
         //logo left hand screen 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: rgba($black, 0.5); // 80% opacity;   
+            color: rgba($black, 0.8); // 80% opacity;   
         }
         //nav links right hand screen (about me, courses, ... etc)
         .nav-link {

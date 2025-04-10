@@ -28,11 +28,18 @@
         border-radius: 0.5rem; // Optional: Add rounded corners
     }
 
-    h2 {
-        color: #fff; // White text for headings
+    h2{
+        margin-bottom: 5rem;
     }
 
-    p {
-        color: #ddd; // Light gray text for paragraphs
-    }
+  
+}
+
+
+.carousel-indicators li {
+    background-color: rgba($primary, 0.7) !important; // Change to your desired color
+}
+
+.carousel-indicators .active {
+    background-color: $primary; // Highlight the active indicator
 }

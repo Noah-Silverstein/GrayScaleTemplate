@@ -45,7 +45,7 @@ $dark: $gray-900;
 // Bootstrap color map
 
 $theme-colors: ("primary": $primary,
-    "secondary": $secondary,
+    "secondary": $accent,
     "success": $success,
     "info": $info,
     "warning": $warning,
@@ -55,7 +55,8 @@ $theme-colors: ("primary": $primary,
 
 // Expanded color map
 
-$expanded-colors: ('black': $black,
+$expanded-colors: (
+    'black': $black,
     'white': $white,
 );
 
