@@ -37,6 +37,7 @@
 
     "barmitzvahpage": {
         "title": "Raising the Bar: B'nei Mitzvah Learning",
+        "intro": "barmitzvah/intro.md",
         "content": "barmitzvah/description.md"
     },
 

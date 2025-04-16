@@ -2,9 +2,20 @@ extends layout
 
 block content
     section.course-page
-        .container.px-4.px-lg-5
-            h2(data-translate = 'barmitzvahpage.title') 
-            p.text-black(data-translate = 'barmitzvahpage.content')
+        .container-fluid.px-4.px-lg-5 
+            .row.align-items-center.mb-5
+                .col-12.position-relative 
+                    .text-block
+                        p.text-black(data-translate='barmitzvahpage.intro')
+                    img.floating-image(src='assets/img/Jewishimg1.jpeg', alt='Floating Image')
+
+            // Second Text Block with Image to the Left
+            .row.align-items-center.mb-5
+                .col-lg-12
+                    .text-block
+                        img.wrapped-image(src='assets/img/yadimg.jpeg', alt='Second Image')
+                        h3 Description of the Course
+                        p.text-black(data-translate='barmitzvahpage.content')
 
     //Testimonials Section
     section.testimonials
@@ -14,16 +25,16 @@ block content
                 .carousel-inner
                     .carousel-item.active
                         .testimonial
-                            p.text-black "This program was life-changing for my son. He learned so much and felt confident during his Bar Mitzvah."
-                            footer.text-muted - Parent of a student
+                            p.text-black.text-justify “It is not an exaggeration to say that without Anneke's help our son might never have become a bar mitzvah. While a smart kid, as a young teenager, our son struggled with ADD and executive functioning, and the bar mitzvah prep was a huge lift for him. Anneke was a continual source of positivity, support, and gentle encouragement. She broke down the many tasks needed for the big day into small, manageable steps, and she never let our son lose faith that he would indeed be able to do all that was required. And even though it took a lot of work and patience, our son did a wonderful job leading our congregation and reading from the Torah. We couldn't have been prouder of him, and - more importantly - he was incredibly proud of himself. The fact that he still speaks of Anneke with great fondness is truly a testament to her abilities as a teacher. We couldn't recommend her more highly.” 
+                            footer.text-muted - Jessica Cohen
                     .carousel-item
                         .testimonial
-                            p.text-black "Anneke's teaching style is so engaging. My daughter loved every lesson!"
-                            footer.text-muted - Another parent
+                            p.text-black.text-justify "Anneke est attentive au profil de l'enfant et à la façon dont il va entrer dans sa méthode de travail. Assez rapidement, elle identifie les compétences que l'enfant a déjà et peut déjà mobiliser. Elle les utilise comme levier pour progresser vers celles qu'il n'a pas et qui doivent se développer. La planification de la matière est claire et adaptée aux capacités et au rythme de l'enfant. Les feed backs réguliers sont sains et honnêtes, ce qui permet d'ajuster les manquements sans délai... et éviter les mauvaises surprises. Étant moi-même professeur, je recommande sans réserve Anneke Silverstein pour son professionnalisme et sa dimension humaine lumineuse." 
+                            footer.text-muted - Charlotte Van Halme
                     .carousel-item
                         .testimonial
-                            p.text-black "I highly recommend this program to anyone preparing for a Bar Mitzvah."
-                            footer.text-muted - Happy student
+                            p.text-black.text-justify “We couldn't have had a better tutor for our boys. Anneke is patient, knowledgeable and fun. She has a deep connection with young adults which naturally motivates them. Anneke knows exactly how much to push her students towards growth while maintaining a positive, low-stress environment. “
+                            footer.text-muted - Pam Meisel
                 ol.carousel-indicators
                     li(data-bs-target='#carouselExampleIndicators', data-bs-slide-to='0', class='active')
                     li(data-bs-target='#carouselExampleIndicators', data-bs-slide-to='1')

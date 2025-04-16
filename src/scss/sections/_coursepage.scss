@@ -28,13 +28,75 @@
         border-radius: 0.5rem; // Optional: Add rounded corners
     }
 
+    .col-lg-8 {
+        background-color: rgba(255, 255, 255, 0.8); // Optional: Add a semi-transparent background for content
+        padding: 2rem; // Add padding for content
+        border-radius: 0.5rem; // Optional: Add rounded corners
+    }
+
+    .floating-image {
+        position: absolute;
+        top: -2rem; // Float the image at the top
+        right: 1rem; // Float the image to the right
+        width: 150px; // Set the size of the circular image
+        height: 150px;
+        border-radius: 50%; // Make the image circular
+        border: 4px solid #fff; // Optional: Add a border for contrast
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10; // Ensure the image appears above the text block
+    }
+
+    .text-block {
+        position: relative;
+        padding: 2rem;
+        background-color: #f8f9fa; // Light background for contrast
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%; // Ensure the text block spans the full width
+    }
+
+    .wrapped-image {
+        float: left; // Float the image to the left
+        margin-right: 1rem; // Add spacing between the image and the text
+        margin-bottom: 1rem; // Add spacing below the image
+        width: 30rem; // Set a fixed width for the image
+        height: auto; // Maintain aspect ratio
+        border-radius: 0.5rem; // Optional: Add rounded corners
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Optional: Add a shadow
+    }
+    
+    @media (max-width: 768px) {
+        .wrapped-image {
+            float: none; // Disable floating on smaller screens
+            display: block;
+            margin: 0 auto 1rem auto; // Center the image
+        }
+    }
+
     h2{
         margin-bottom: 5rem;
     }
 
   
 }
+// Testimonial Carousel
 
+.testimonial {
+    min-height: 300px; // Ensure all testimonials have the same height
+    display: flex;
+    flex-direction: column;
+    text-align: left; // Optional: Center-align the text
+}
+.carousel-inner {
+    display: flex; // Ensure all items are aligned properly
+    min-height: 300px; // Set the height to accommodate the largest testimonial
+}
+
+.carousel-indicators {
+    position: absolute; // Keep it positioned relative to the carousel
+    bottom: -2rem; // Move it lower than the carousel content
+    justify-content: center; // Ensure indicators are centered
+}
 
 .carousel-indicators li {
     background-color: rgba($primary, 0.7) !important; // Change to your desired color
