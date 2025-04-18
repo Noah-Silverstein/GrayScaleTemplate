@@ -32,17 +32,24 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='./index/#about') About Me
+                            a.nav-link(href='./index.html#about', data-translate='menu.about')
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href='#courses', id='coursesDropdown', role='button', data-bs-toggle='dropdown', aria-expanded='false') Courses
+                            ul.dropdown-menu(aria-labelledby='coursesDropdown')
+                                li
+                                    a.dropdown-item(href='./bar-mitzvah.html') Bar Mitzvah
+                                li
+                                    a.dropdown-item(href='./cantillation.html') Cantillation
+                                li
+                                    a.dropdown-item(href='./biblical-hebrew.html') Biblical Hebrew
+
                         li.nav-item
-                            a.nav-link(href='./index/#courses') Courses
-                        li.nav-item
-                            a.nav-link(href='./index/#contact') Contact
+                            a.nav-link(href='./index.html#signup') Contact
                         li.nav-item
                             .dropdown-wrapper
                                 select#language-switcher
                                     option(value='en') EN
                                     option(value='nl') NL
-
         // Main content block
         block content
 
